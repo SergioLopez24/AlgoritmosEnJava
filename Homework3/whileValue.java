@@ -1,22 +1,26 @@
-/*
-Introduccion a la computacion y programacion 1 seccion B
-Laboratorio, algoritmos en java
+class whileValue {   
 
-Complete el algoritmo:
-
-Dado un numero mayor a cero, imprima el valor actual desde cero hasta antes de llegar dado valor.
-
-*/
-
-public class whileValue {   
 
    public static void main(String[] args) {
-   		int valorActual = 0;
-   		System.out.println(args[0]);
 
-   		//si valor actual < args[0]
-   			System.out.println("el valor actual es: "+valorActual);
-      
-   }
+        
+   int numero= 10;
+   int contador=0;
+
+    System.out.println("valor ingresado "+numero);
+
+   System.out.println("valores anteriones al valor ingresado :");
+
+
+   while(contador<numero){
+   
+
+       System.out.println("el valor actual es: "+contador);
+
+    contador++;
+
+
+ 		  }
+ 	  }
 
 }
