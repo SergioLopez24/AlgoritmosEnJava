@@ -1,21 +1,29 @@
-/*
-Introduccion a la computacion y programacion 1 seccion B
-Laboratorio, algoritmos en java
+import java.util.Scanner;
 
-Complete el algoritmo:
-Dados 2 numeros (limite inferior y superior), recorra el rango e imprima los numeros dentro de este rango.
+class rangeSum{
 
-*/
+   
+    public static void main(String[] args) {
+      Scanner intro=new Scanner(System.in);
+      System.out.println("Ingrese el valor del rago");
+      	 
+           System.out.println("Ingrese el valor inicial del rango : ");
+       int inicioRango=intro.nextInt();
+            System.out.println("Ingrese el valor final del rango : ");
+       int finRango=intro.nextInt();
 
-public class rangeSum {   
+       
+       System.out.print("El rango del intervalo es de: ");
 
-   public static void main(String[] args) {
+       
+       for (int i=inicioRango; i<=finRango; i++){
 
-		System.out.println("limites: "+args[0]+" "+args[1]);
+           
+          System.out.print(i+"  "); 
 
-      
-         System.out.println("numero actual es:" );
-      
-   }
+      		 }
+
+                   
+	   }
 
 }

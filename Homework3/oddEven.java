@@ -1,24 +1,24 @@
-/*
-Introduccion a la computacion y programacion 1 seccion B
-Laboratorio, algoritmos en java
+import java.util.Scanner;
 
-Complete el algoritmo:
+ 	class oddEven{
 
-Dado un numero 'n' identifique si es par o impar
-
-*/
-
-public class oddEven {   
-
-   public static void main(String[] args) {
+   
+    public static void main(String[] args) {
+      Scanner intro=new Scanner(System.in);
+      System.out.println("Ingrese el numero :");
+      	              
+      	  int numero=intro.nextInt();
       
-      	System.out.println(args[0]);
+      if(numero%2==0){
+   		
+                System.out.println("numero es par");
 
-   		// si el numero es impar
-   			System.out.println("numero es impar");
+      }else{
+   		
+                System.out.println("numero es impar");
 
-   		// si el numero es par
-   			System.out.println("numero es par");
+ 		  }
 
-   }
+ 	  }
+
 }

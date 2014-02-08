@@ -1,26 +1,36 @@
-/*
-Introduccion a la computacion y programacion 1 seccion B
-Laboratorio, algoritmos en java
+import java.util.Scanner;
 
-Complete el algoritmo:
+ class productToNumber {
 
-Despliege la multiplicacion desde 0 hasta un valor 'n' dado.
-Ej:
-Si si ingresa 6
-mostrar
-1x2x3x4x5x6=720
-
-*/
-
-public class productToNumber {   
-
-   public static void main(String[] args) {
-   		int resultado = 0;
-   		System.out.println(args[0]);
-
-
-   		System.out.println("el producto es: "+resultado);
-      
-   }
+   
+    public static void main(String[] args) {
+      Scanner intro=new Scanner(System.in);
+      System.out.println("Ingrese el numero :");
+      	        
+ 
+        int numero = intro.nextInt();
+        
+        int factorial = 1;
+        
+    System.out.println("Numero :"+numero);
+    System.out.print("Numeros Anteriores: ");
+       
+    for(int i=1; i<=numero; i++){
+            System.out.print(i+" ");
+            
+        }
+       
+            
+        while(numero != 0)
+        {
+           
+            factorial *= numero;
+            numero--; 
+           
+        }
+    
+         
+        System.out.print("= Factorial: " + factorial); 
+    }  
 
 }
